@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Kanimozhi D — Department of Computer Application</title>
+  <meta name="description" content="Digital portfolio of Kanimozhi D, Department of Computer Application." />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <div class="avatar">KD</div>
+        <div>
+          <h1>Kanimozhi D <small>Department of Computer Application</small></h1>
+        </div>
+      </div>
+      <nav>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main class="grid">
+      <div>
+        <section class="card hero">
+          <div class="hero-left">
+            <h2>Hello — I'm <strong>Kanimozhi D</strong></h2>
+            <p class="muted">Student | Department of Computer Application. I build simple web pages and learn programming.</p>
+            <div class="cta">
+              <a class="btn" href="#about">Know more about me</a>
+            </div>
+          </div>
+          <div class="hero-right center">
+            <svg width="120" height="120" viewBox="0 0 24 24" fill="none" aria-hidden="true"><rect x="1" y="1" width="22" height="22" rx="6" stroke="url(#g)" stroke-width="1.2"/><defs><linearGradient id="g" x1="0" x2="1"><stop offset="0" stop-color="#7c3aed"/><stop offset="1" stop-color="#06b6d4"/></linearGradient></defs></svg>
+          </div>
+        </section>
+
+        <section id="about" class="card about">
+          <h3>About</h3>
+          <p>I am Kanimozhi from the Department of Computer Application. I have completed my school in Model School Tirupattur. My hobbies are singing, dancing, drawing.</p>
+          <div style="margin-top:10px">
+            <strong>Skills</strong>
+            <div class="skills" style="margin-top:8px">
+              <span class="pill">HTML</span>
+              <span class="pill">CSS</span>
+              <span class="pill">JavaScript</span>
+              <span class="pill">C / Python (basics)</span>
+              <span class="pill">Problem Solving</span>
+            </div>
+          </div>
+        </section>
+
+        <section id="projects" class="card projects">
+          <h3>Projects</h3>
+          <div class="project">
+            <h4>Portfolio Website (this page)</h4>
+            <p>A single-file responsive portfolio built with HTML, CSS and JS. Simple, clean and mobile-friendly.</p>
+          </div>
+          <div class="project">
+            <h4>DSA Practice Programs</h4>
+            <p>Practicing common Data Structures & Algorithms problems in Python and C — factorials, stacks, queues, linked lists etc.</p>
+          </div>
+        </section>
+
+        <section class="card">
+          <h3>More</h3>
+          <p class="muted">Want this as a downloadable file or need changes (colors, sections, add photo)? Tell me what you'd like and I'll update it.</p>
+        </section>
+      </div>
+
+      <aside>
+        <div class="card">
+          <h3 class="center">Contact</h3>
+          <div class="contact-list" id="contact">
+            <div class="contact-item"><div class="icon">✉️</div><div><div class="muted">Email</div><div>your-email@example.com</div></div></div>
+            <div class="contact-item"><div class="icon">📍</div><div><div class="muted">Location</div><div>Tirupattur</div></div></div>
+            <div class="contact-item"><div class="icon">🔗</div><div><div class="muted">Website</div><div><a href="#projects" style="color:inherit;text-decoration:underline">Portfolio</a></div></div></div>
+          </div>
+        </div>
+
+        <div class="card" style="margin-top:16px;text-align:center">
+          <h4>Quick Links</h4>
+          <p class="muted">Use the links at the top to jump to sections. You can edit contact details directly in the file.</p>
+        </div>
+      </aside>
+    </main>
+
+    <footer>
+      <div>© <span id="year"></span> Kanimozhi D — Department of Computer Application</div>
+    </footer>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
