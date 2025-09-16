@@ -1,0 +1,63 @@
+:root{
+  --bg:#0f1724;
+  --card:#0b1220;
+  --muted:#94a3b8;
+  --accent:#7c3aed;
+  --glass: rgba(255,255,255,0.04);
+  --glass-2: rgba(255,255,255,0.02);
+  --radius:16px;
+  font-family: Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+}
+*{box-sizing:border-box}
+html,body{height:100%}
+body{
+  margin:0;
+  background: linear-gradient(180deg,#071026 0%, #071427 60%);
+  color:#e6eef8;
+  -webkit-font-smoothing:antialiased;
+  -moz-osx-font-smoothing:grayscale;
+  line-height:1.5;
+  padding:32px;
+}
+
+.container{max-width:1000px;margin:0 auto}
+
+header{display:flex;align-items:center;justify-content:space-between;margin-bottom:28px}
+.brand{display:flex;gap:14px;align-items:center}
+.avatar{
+  width:64px;height:64px;border-radius:12px;background:linear-gradient(135deg,var(--accent),#06b6d4);display:flex;align-items:center;justify-content:center;font-weight:700;color:white;font-size:20px;box-shadow:0 6px 18px rgba(124,58,237,0.18)
+}
+h1{font-size:20px;margin:0}
+h1 small{display:block;font-size:13px;color:var(--muted);margin-top:4px}
+
+nav a{color:var(--muted);text-decoration:none;margin-left:16px;font-size:14px}
+nav a:hover{color:var(--accent)}
+
+.grid{display:grid;grid-template-columns:1fr 320px;gap:22px}
+@media (max-width:880px){.grid{grid-template-columns:1fr;}.avatar{width:56px;height:56px}}
+
+.card{background:linear-gradient(180deg,var(--card), rgba(8,12,20,0.6));border-radius:var(--radius);padding:20px;box-shadow:0 6px 20px rgba(2,6,23,0.6);}
+
+.hero{display:flex;gap:18px;align-items:center}
+.hero-left{flex:1}
+.hero h2{margin:0;font-size:22px}
+.hero p{margin:10px 0;color:var(--muted)}
+
+.cta{margin-top:12px}
+.btn{display:inline-block;padding:10px 14px;border-radius:12px;background:linear-gradient(90deg,var(--accent),#06b6d4);color:white;text-decoration:none;font-weight:600}
+.muted{color:var(--muted);font-size:14px}
+
+section + section{margin-top:18px}
+
+.about p{margin:8px 0;color:#dbeafe}
+
+.skills{display:flex;gap:8px;flex-wrap:wrap}
+.pill{background:var(--glass);padding:8px 10px;border-radius:999px;font-size:13px;color:var(--muted)}
+
+.projects .project{padding:14px;border-radius:12px;background:var(--glass-2);margin-bottom:12px}
+.project h4{margin:0 0 8px 0}
+.project p{margin:0;color:var(--muted)}
+
+.contact-list{display:flex;flex-direction:column;gap:8px}
+.contact-item{display:flex;gap:10px;align-items:center}
+.icon{width:36px;height:36;border-radius:10
